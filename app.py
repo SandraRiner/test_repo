@@ -33,7 +33,7 @@ df = df.dropna(subset= ["co2_per_capita"])
 df = df.sort_values(by="year")
 fig = px.scatter_geo(df,
                      animation_frame="year",
-                     locations="country_code", 
+                     locations="country_name", 
                      color="co2_per_capita",
                      size="co2_per_capita",
                      projection="natural earth"
