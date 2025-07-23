@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv("../data/CO2_per_capita.csv", sep=";")
+df = pd.read_csv("data/CO2_per_capita.csv", sep=";")
 df.columns = ['country_name','country_code','year','co2_per_capita']
 
 st.title('Top CO2 emitters')
