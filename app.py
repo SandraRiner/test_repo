@@ -7,7 +7,7 @@ df = pd.read_csv("data/CO2_per_capita.csv", sep=";")
 df.columns = ['country_name','country_code','year','co2_per_capita']
 
 st.title('Top CO2 emitters')
-st.dataframe(df)
+# st.dataframe(df)
 
 min_year, max_year = st.slider('Choisir un intervalle de temps', min_value=1960, max_value=2011, value=(2006,2008))
 
