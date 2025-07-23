@@ -9,7 +9,7 @@ df.columns = ['country_name','country_code','year','co2_per_capita']
 st.title('Top CO2 emitters')
 # st.dataframe(df)
 
-min_year, max_year = st.slider('Choisir un intervalle de temps', min_value=1960, max_value=2011, value=(2006,2008))
+min_year, max_year = st.slider('Choisir un intervalle de temps', min_value=1960, max_value=2011, value=(2002,2008))
 
 def top_n_emitters(df, min_year, max_year, nb_displayed=10):
     #years filter
