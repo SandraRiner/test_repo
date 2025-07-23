@@ -36,7 +36,8 @@ fig = px.scatter_geo(df,
                      locations="country_code", 
                      color="co2_per_capita",
                      size="co2_per_capita",
-                     projection="natural earth"
+                     projection="natural earth",
+                     hover='country_name'
                      )
 
 st.plotly_chart(fig)
